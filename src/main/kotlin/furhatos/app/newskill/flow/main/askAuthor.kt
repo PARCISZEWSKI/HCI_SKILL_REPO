@@ -31,9 +31,9 @@ val Askauthor: State = state(Parent) {
         goto(Asktitle)
     }
     onResponse<Yes> {
-        furhat.say("Perfect, let me look it up")
+        furhat.say("What is the authors name?")
         furhat.gesture(Gestures.Smile(1.0 * expValue, 1.0 + expValue))
-        goto(Asktitle)
+        reentry()
     }
     onResponse<No> {
         furhat.say("Oh alright, I can also search by title!")

@@ -18,7 +18,7 @@ val Loanout: State = state(Parent) {
 
     onResponse<Yes> {
         furhat.gesture(Gestures.BigSmile(1.0 * expValue, 1.0 + expValue))
-        furhat.say("Alright, it will be ready for pickup at the desk in 5 mintues!")
+        furhat.say("Alright, it will be ready for pickup at the desk in around five minutes!")
         goto(Seeyou)
     }
     onResponse<No> {

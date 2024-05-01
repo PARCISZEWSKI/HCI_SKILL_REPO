@@ -15,9 +15,10 @@ val Asktitle: State = state(Parent) {
         furhat.listen()
     }
 
-    onResponse<Book> { //Placeholder
+    onResponse<Book> {
         furhat.say("Alright")
         currentBook = it.intent.toString()
+        currentAuthor = (libraryBooks.entries.find {it.value.lowercase() == currentBook}?.key).toString()
         goto(Confirmtitle)
     }
 
@@ -58,6 +59,7 @@ val Asktitle: State = state(Parent) {
         else {
             furhat.say("I'm sorry I didn't quite understand the title, could you repeat it?")
             furhat.gesture(Gestures.ExpressSad(1.0 * expValue, 1.0 + expValue))
+            reentry()
         }
     }
 
