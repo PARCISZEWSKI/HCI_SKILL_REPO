@@ -26,10 +26,12 @@ val Confirmtitle: State = state(Parent) {
     }
 
     onResponse<Yes> {
+        furhat.gesture(Gestures.Smile(1.0 * expValue, 1.0 + expValue))
         furhat.say("Perfect!")
         goto(Loanout)
     }
     onResponse<No> {
+        furhat.gesture(Gestures.Surprise(1.0 * expValue, 1.0 + expValue))
         furhat.say("Oh alright then let's try again!")
         goto(Askauthor)
     }

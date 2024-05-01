@@ -43,11 +43,13 @@ val Asktitle: State = state(Parent) {
                 +currentAuthor
             }
             onResponse<Yes> {
+                furhat.gesture(Gestures.Smile(1.0 * expValue, 1.0 + expValue))
                 furhat.say("Alright")
                 currentBook = libraryBooks[currentAuthor].toString()
                 goto(Loanout)
             }
             onResponse<No> {
+                furhat.gesture(Gestures.Surprise(1.0 * expValue, 1.0 + expValue))
                 furhat.say("That is unfortunate, lets try again, what is the title of the book?")
                 reentry()
             }
