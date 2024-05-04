@@ -13,12 +13,9 @@ val libraryBooks = mapOf( //Book Map
     "Brian Christian" to "The Alignment Problem",
     "Max Tegmark" to "Life 3.0",
     "Raymond Kurzweil" to "The Singularity Is Near",
-    "Kai-Fu Lee" to "AI Superpowers",
     "Kate Crawford" to "The Atlas of AI",
     "Gary Marcus" to "Rebooting AI",
-    "Hubert Dreyfus" to "What Computers Can't Do",
     "Martin Ford" to "Architects of Intelligence",
-
 )
 
 var currentBook : String = ""

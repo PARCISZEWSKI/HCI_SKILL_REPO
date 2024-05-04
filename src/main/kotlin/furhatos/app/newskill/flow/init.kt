@@ -19,6 +19,9 @@ val Init: State = state {
         users.setSimpleEngagementPolicy(DISTANCE_TO_ENGAGE, MAX_NUMBER_OF_USERS)
         furhat.voice = Voice("Danielle-Neural")
     }
+    onButton("Wake up") {
+        goto(Greeting)
+    }
     onEntry {
         /** start interaction */
 

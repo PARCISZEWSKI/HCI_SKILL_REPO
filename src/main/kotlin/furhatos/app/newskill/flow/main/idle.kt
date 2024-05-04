@@ -9,6 +9,9 @@ val Idle: State = state {
     onEntry {
         furhat.attendNobody()
     }
+    onButton("Wake up") {
+        goto(Greeting)
+    }
 
     onUserEnter {
         furhat.attend(it)

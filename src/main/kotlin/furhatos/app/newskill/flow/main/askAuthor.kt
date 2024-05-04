@@ -30,17 +30,22 @@ val Askauthor: State = state(Parent) {
         //println(currentAuthor)
         goto(Asktitle)
     }
-    onResponse<Yes> {
-        furhat.say("What is the authors name?")
-        furhat.gesture(Gestures.Smile(1.0 * expValue, 1.0 + expValue))
-        reentry()
-    }
     onResponse<No> {
         furhat.say("Oh alright, I can also search by title!")
         furhat.gesture(Gestures.Surprise(1.0 * expValue, 1.0 + expValue))
         goto(Asktitle)
     }
+    onResponse<Yes> {
+        furhat.say("What is the authors name?")
+        furhat.gesture(Gestures.Smile(1.0 * expValue, 1.0 + expValue))
+        reentry()
+    }
 
+    onResponse {
+        furhat.gesture(Gestures.Smile(1.0 * expValue, 1.0 + expValue))
+        furhat.say("Alright!")
+        goto(Asktitle)
+    }
     onNoResponse {
         reentry()
     }
