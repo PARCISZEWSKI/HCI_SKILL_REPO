@@ -11,13 +11,12 @@ import furhatos.nlu.common.Yes
 
 val Confirmtitle: State = state(Parent) {
     onEntry {
+        //furhat.gesture(Gestures.Smile(1.0 * expValue, 5.0 * expValue))
         furhat.ask{
             +"So, just to confirm one last time "
-            +Gestures.Smile(1.0 * expValue, 1.0 * expValue)
             +"the title you are looking for is "
             +currentBook
             +" and the author is "
-            +Gestures.Smile(1.0 * expValue, 1.0 * expValue)
             +currentAuthor
             +"?"}
     }
