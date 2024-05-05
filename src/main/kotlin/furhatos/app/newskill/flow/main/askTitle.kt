@@ -29,8 +29,12 @@ val Asktitle: State = state(Parent) {
         //goto(Confirmtitle)
     }
     onResponse<No> {
-        furhat.say("I'm sorry but there is a minimum amount of information I need")
-        furhat.gesture(Gestures.ExpressSad(1.0 * expValue, 1.0 + expValue))
+        furhat.say{
+            +Gestures.ExpressSad(1.0 * expValue, 2.0 + expValue)
+            +"I'm sorry"
+            +"but there is a minimum amount of information I need"
+
+        }
         goto(Failurereset)
     }
 

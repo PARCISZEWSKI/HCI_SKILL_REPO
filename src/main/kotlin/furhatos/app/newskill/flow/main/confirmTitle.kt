@@ -13,11 +13,11 @@ val Confirmtitle: State = state(Parent) {
     onEntry {
         furhat.ask{
             +"So, just to confirm one last time "
-            +Gestures.BrowFrown(1.0 * expValue, 1.0 * expValue)
+            +Gestures.Smile(1.0 * expValue, 1.0 * expValue)
             +"the title you are looking for is "
             +currentBook
             +" and the author is "
-            +Gestures.BrowRaise(1.0 * expValue, 1.0 * expValue)
+            +Gestures.Smile(1.0 * expValue, 1.0 * expValue)
             +currentAuthor
             +"?"}
     }
