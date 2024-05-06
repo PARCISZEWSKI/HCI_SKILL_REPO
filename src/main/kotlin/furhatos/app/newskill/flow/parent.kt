@@ -8,12 +8,7 @@ import furhatos.autobehavior.*
 import furhatos.gestures.Gestures
 
 val libraryBooks = mapOf( //Book Map
-    "Melanie Mitchell"   to "Artificial Intelligence: A Guide for Thinking Humans",
     "Ian Goodfellow" to "Deep Learning",
-    "Brian Christian" to "The Alignment Problem",
-    "Max Tegmark" to "Life 3.0",
-    "Raymond Kurzweil" to "The Singularity Is Near",
-    "Kate Crawford" to "The Atlas of AI",
     "Gary Marcus" to "Rebooting AI",
     "Martin Ford" to "Architects of Intelligence",
 )

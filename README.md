@@ -19,15 +19,8 @@ There is only a single skill file provided, in the sdk you need to run the skill
 - The conversation starts, here are the books and authors that the bot can detect:
 ```
 val libraryBooks = mapOf( //Book Map
-    "Melanie Mitchell"   to "Artificial Intelligence: A Guide for Thinking Humans",
     "Ian Goodfellow" to "Deep Learning",
-    "Brian Christian" to "The Alignment Problem",
-    "Max Tegmark" to "Life 3.0",
-    "Raymond Kurzweil" to "The Singularity Is Near",
-    "Kai-Fu Lee" to "AI Superpowers",
-    "Kate Crawford" to "The Atlas of AI",
     "Gary Marcus" to "Rebooting AI",
-    "Hubert Dreyfus" to "What Computers Can't Do",
     "Martin Ford" to "Architects of Intelligence",
 )
 ```
