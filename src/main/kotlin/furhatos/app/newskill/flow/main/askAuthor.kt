@@ -44,7 +44,7 @@ val Askauthor: State = state(Parent) {
     onResponse {
         furhat.gesture(Gestures.Surprise(1.0 * expValue, 1.0 + expValue))
         furhat.say("Sorry we don´t seem to have this author!")
-        goto(reentry())
+        goto(Failurereset)
     }
 
     onNoResponse {
