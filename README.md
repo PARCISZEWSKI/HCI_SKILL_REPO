@@ -1,6 +1,4 @@
-# Furhat Hi-Fi bot version 0.1
-## State of the estate
-This is the initial Hi-Fi version. Please read the readme and, open new issues on the issues tab of this repo when you encounter problems or you have suggestions. This will streamline possible bug fixing for me so that I can progress quickly with updating the robot. You can find the codeless version of the skill file in the releases section on github to the right.
+# Furhat Hi-Fi bot
 ## How to use
 There is only a single skill file provided, in the sdk you need to run the skill, after running the skill:
 - Launch the web interface
@@ -24,13 +22,5 @@ val libraryBooks = mapOf( //Book Map
     "Martin Ford" to "Architects of Intelligence",
 )
 ```
-- Other then this I would recommend going in blind so I can get the best feedback possible on improvements and what conflicts we can forsee.
 
-
-## Other things of note
-- The unexpressive bot is much better, it has no expressions now
-
-## To do
-- Testing and bugfixing
-- More features
 ### _Made by: Group 23 (P. A. Arciszewski (2813638), Carlos Tam (2804219), Omar Rampado (2817231), Sander Bindels (2589706))_
